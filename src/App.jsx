@@ -1,16 +1,18 @@
 import Nav from "./components/Nav"
 
+import imageMoon from '../src/assets/image-moon-2.png'
+
 function App() {
  
   return (
-    <section className="bg-hero-bg md:h-screen h-full bg-center bg-cover font-Barlow">
+    <section className="bg-heroBg md:h-screen h-full bg-center bg-cover font-Barlow">
       <Nav />
 
       <div className="md:container px-2 pt-5 md:text-left text-center">
         <h1 className="text-white text-2xl"><spam className="font-bold text-[#ffffff70] mr-2">01</spam> ESCOLHA O SEU DESTINO</h1>
 
         <div className="md:flex items-center md:justify-between pt-6 mt-6">
-          <img src="./src/assets/image-moon-2.png" className="md:w-[36%] w-[52%] md:py-0 py-4 md:mx-0 mx-auto" />
+          <img src={imageMoon} className="md:w-[36%] w-[52%] md:py-0 py-4 md:mx-0 mx-auto" />
 
           <div className="md:w-1/2">
             <ul className="text-white pb-4">

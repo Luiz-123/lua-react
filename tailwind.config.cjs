@@ -14,7 +14,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'hero-bg': "url('./src/assets/background.jpg')",
+        heroBg: 'url(/src/assets/background.jpg)',
       },
 
       fontFamily: {

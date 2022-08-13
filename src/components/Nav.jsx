@@ -1,3 +1,7 @@
+import logo from '../../src/assets/logo.svg'
+import iconClose from '../../src/assets/icon-close.svg'
+import iconHamburger from '../../src/assets/icon-hamburger.svg'
+
 import { useState } from 'react'
 
 const Nav = () => {
@@ -13,9 +17,9 @@ const Nav = () => {
 
     return(
         <nav className="flex items-center justify-between pt-5">
-            <img src="./src/assets/logo.svg" className="w-10 ml-7" />
+            <img src={logo} className="w-10 ml-7" />
             <img 
-                src={open ? "./src/assets/icon-close.svg" : "./src/assets/icon-hamburger.svg"} 
+                src={open ? iconClose : iconHamburger} 
                 className="z-20 fixed right-5 top-6 cursor-pointer md:hidden" 
                 onClick={() => setOpen(!open)}>
             </img>
